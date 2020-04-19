@@ -1,14 +1,16 @@
-import * as React from 'react';
+import * as React from "react";
+import { Menu, Button, List } from "semantic-ui-react";
 
-export interface INavBarProps {
-}
+export interface INavBarProps {}
 
-export default class  extends React.Component<INavBarProps> {
+export default class extends React.Component<INavBarProps> {
   public render() {
     return (
-      <div>
-        
-      </div>
+      <Menu>
+        <Menu.Item name="Home"></Menu.Item>
+        <Menu.Item name="Page1"></Menu.Item>
+        <Menu.Item name="Page2"></Menu.Item>
+      </Menu>
     );
   }
 }
